@@ -12,7 +12,7 @@ Please report privately if you find any of the following:
 
 ## How to report
 
-Use GitHub private vulnerability reporting through the **Security** tab of this repository, if it is enabled. Otherwise email farjad_tahir@splashpk.com.
+Use GitHub private vulnerability reporting through the **Security** tab of this repository, if it is enabled. Otherwise email <farjad_tahir@splashpk.com>.
 
 Please do not open a public issue for these cases.
 
