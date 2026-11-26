@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" width="760" height="500" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Illustrative operational and coordination complexity over time for four architecture styles</title>
+<desc id="d">Illustrative curves, not measured data. A monolith without enforced boundaries starts simple and becomes complex as it grows. A modular monolith grows more slowly. Microservices start with high fixed complexity and grow slowly. Serverless starts moderate and grows steadily.</desc>
+<rect width="760" height="500" fill="#ffffff"/>
+<text x="380.0" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b2631">Complexity over time (illustrative)</text>
+<text x="380.0" y="48" text-anchor="middle" font-size="12" fill="#566573">Shapes show typical tendencies, not measurements. Your results will differ.</text>
+<line x1="100" y1="420.0" x2="730" y2="420.0" stroke="#e5e8e8" stroke-width="1"/>
+<line x1="100" y1="350.0" x2="730" y2="350.0" stroke="#e5e8e8" stroke-width="1"/>
+<line x1="100" y1="280.0" x2="730" y2="280.0" stroke="#e5e8e8" stroke-width="1"/>
+<line x1="100" y1="210.0" x2="730" y2="210.0" stroke="#e5e8e8" stroke-width="1"/>
+<line x1="100" y1="140.0" x2="730" y2="140.0" stroke="#e5e8e8" stroke-width="1"/>
+<line x1="100" y1="70.0" x2="730" y2="70.0" stroke="#e5e8e8" stroke-width="1"/>
+<line x1="100.0" y1="70" x2="100.0" y2="420" stroke="#f2f3f4" stroke-width="1"/>
+<line x1="226.0" y1="70" x2="226.0" y2="420" stroke="#f2f3f4" stroke-width="1"/>
+<line x1="352.0" y1="70" x2="352.0" y2="420" stroke="#f2f3f4" stroke-width="1"/>
+<line x1="478.0" y1="70" x2="478.0" y2="420" stroke="#f2f3f4" stroke-width="1"/>
+<line x1="604.0" y1="70" x2="604.0" y2="420" stroke="#f2f3f4" stroke-width="1"/>
+<line x1="730.0" y1="70" x2="730.0" y2="420" stroke="#f2f3f4" stroke-width="1"/>
+<line x1="100" y1="70" x2="100" y2="420" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="100" y1="420" x2="730" y2="420" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="90" y="424.0" text-anchor="end" font-size="12" fill="#2c3e50">Low</text>
+<text x="90" y="249.0" text-anchor="end" font-size="12" fill="#2c3e50">Medium</text>
+<text x="90" y="74.0" text-anchor="end" font-size="12" fill="#2c3e50">High</text>
+<text x="100.0" y="440" text-anchor="middle" font-size="12" fill="#2c3e50">Early</text>
+<text x="415.0" y="440" text-anchor="middle" font-size="12" fill="#2c3e50">Growing</text>
+<text x="730.0" y="440" text-anchor="middle" font-size="12" fill="#2c3e50">Large</text>
+<text x="415.0" y="462" text-anchor="middle" font-size="13" fill="#2c3e50">Product, codebase, and team size over time</text>
+<text transform="translate(20 245.0) rotate(-90)" text-anchor="middle" font-size="13" fill="#2c3e50">Operational and coordination complexity</text>
+<polyline points="100.0,385.0 226.0,367.5 352.0,329.0 478.0,266.0 604.0,182.0 730.0,87.5" fill="none" stroke="#c0392b" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="385.0" r="3.5" fill="#c0392b"/>
+<circle cx="226.0" cy="367.5" r="3.5" fill="#c0392b"/>
+<circle cx="352.0" cy="329.0" r="3.5" fill="#c0392b"/>
+<circle cx="478.0" cy="266.0" r="3.5" fill="#c0392b"/>
+<circle cx="604.0" cy="182.0" r="3.5" fill="#c0392b"/>
+<circle cx="730.0" cy="87.5" r="3.5" fill="#c0392b"/>
+<polyline points="100.0,367.5 226.0,353.5 352.0,329.0 478.0,297.5 604.0,259.0 730.0,217.0" fill="none" stroke="#2471a3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="367.5" r="3.5" fill="#2471a3"/>
+<circle cx="226.0" cy="353.5" r="3.5" fill="#2471a3"/>
+<circle cx="352.0" cy="329.0" r="3.5" fill="#2471a3"/>
+<circle cx="478.0" cy="297.5" r="3.5" fill="#2471a3"/>
+<circle cx="604.0" cy="259.0" r="3.5" fill="#2471a3"/>
+<circle cx="730.0" cy="217.0" r="3.5" fill="#2471a3"/>
+<polyline points="100.0,210.0 226.0,196.0 352.0,178.5 478.0,157.5 604.0,133.0 730.0,105.0" fill="none" stroke="#1e8449" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="210.0" r="3.5" fill="#1e8449"/>
+<circle cx="226.0" cy="196.0" r="3.5" fill="#1e8449"/>
+<circle cx="352.0" cy="178.5" r="3.5" fill="#1e8449"/>
+<circle cx="478.0" cy="157.5" r="3.5" fill="#1e8449"/>
+<circle cx="604.0" cy="133.0" r="3.5" fill="#1e8449"/>
+<circle cx="730.0" cy="105.0" r="3.5" fill="#1e8449"/>
+<polyline points="100.0,332.5 226.0,315.0 352.0,287.0 478.0,252.0 604.0,210.0 730.0,161.0" fill="none" stroke="#b9770e" stroke-width="3" stroke-dasharray="6 4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="332.5" r="3.5" fill="#b9770e"/>
+<circle cx="226.0" cy="315.0" r="3.5" fill="#b9770e"/>
+<circle cx="352.0" cy="287.0" r="3.5" fill="#b9770e"/>
+<circle cx="478.0" cy="252.0" r="3.5" fill="#b9770e"/>
+<circle cx="604.0" cy="210.0" r="3.5" fill="#b9770e"/>
+<circle cx="730.0" cy="161.0" r="3.5" fill="#b9770e"/>
+<g font-size="12" fill="#2c3e50">
+<line x1="100" y1="478" x2="124" y2="478" stroke="#c0392b" stroke-width="3"/>
+<text x="132" y="482">Monolith without enforced boundaries</text>
+<line x1="385.0" y1="478" x2="409.0" y2="478" stroke="#2471a3" stroke-width="3"/>
+<text x="417.0" y="482">Modular monolith</text>
+<line x1="100" y1="494" x2="124" y2="494" stroke="#1e8449" stroke-width="3"/>
+<text x="132" y="498">Microservices</text>
+<line x1="385.0" y1="494" x2="409.0" y2="494" stroke="#b9770e" stroke-width="3" stroke-dasharray="6 4"/>
+<text x="417.0" y="498">Serverless</text>
+</g>
+</svg>

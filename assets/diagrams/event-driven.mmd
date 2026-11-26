@@ -1,0 +1,24 @@
+flowchart LR
+    subgraph Producers["Event producers"]
+        Orders["Orders service"]
+        Payments["Payments service"]
+    end
+
+    subgraph Broker["Event broker"]
+        T1["Topic: order placed"]
+        T2["Topic: payment received"]
+    end
+
+    subgraph Consumers["Event consumers"]
+        Inventory["Inventory"]
+        Email["Email notifications"]
+        Analytics["Analytics"]
+    end
+
+    Orders --> T1
+    Payments --> T2
+    T1 --> Inventory
+    T1 --> Email
+    T1 --> Analytics
+    T2 --> Orders
+    T2 --> Email

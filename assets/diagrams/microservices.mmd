@@ -1,0 +1,14 @@
+flowchart TB
+    Client["Web and mobile clients"] --> GW["API gateway"]
+
+    GW --> Orders["Orders service"]
+    GW --> Billing["Billing service"]
+    GW --> Catalog["Catalog service"]
+
+    Orders --> ODB[("Orders database")]
+    Billing --> BDB[("Billing database")]
+    Catalog --> CDB[("Catalog database")]
+
+    Orders -->|"publishes events"| Broker["Message broker"]
+    Broker -->|"delivers events"| Billing
+    Broker -->|"delivers events"| Notify["Notification service"]

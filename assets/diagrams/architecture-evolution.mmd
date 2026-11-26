@@ -1,0 +1,19 @@
+flowchart TB
+    SOA["SOA"] -.->|"influenced"| MS["Microservices"]
+    Mono["Monolith"] -->|"add enforced boundaries"| MM["Modular Monolith"]
+    MM -->|"extract services where justified"| MS
+    MS -.->|"consolidate when overhead outweighs benefit"| MM
+    Mono -->|"move spiky or event work"| SL["Serverless"]
+    MS -->|"offload spiky or event work"| SL
+    MM -->|"extreme spikes, in memory grid"| SB["Space Based"]
+
+    subgraph Inside["Structure and communication styles, usable with any style above"]
+        direction LR
+        Layered["Layered / N-Tier"]
+        Hex["Hexagonal"]
+        Clean["Clean / Onion"]
+        CQRS["CQRS and Event Sourcing"]
+        EDA["Event-Driven"]
+    end
+
+    Inside -.->|"can be combined with"| Mono

@@ -1,0 +1,60 @@
+name: New pattern request
+description: Suggest an architecture pattern that is missing from the catalog.
+title: "[New pattern]: "
+labels: ["new pattern"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a pattern. Every page in this repository follows the same structure and stays neutral, so the more detail you can give, the easier it is to review. You are welcome to write the page yourself with `templates/pattern-template.md`.
+
+  - type: input
+    id: name
+    attributes:
+      label: Pattern name
+      placeholder: Pipes and Filters
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Which kind of pattern is it?
+      options:
+        - Deployment and scaling style
+        - Structural style (how code is organized)
+        - Communication style (how parts talk to each other)
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: One paragraph summary
+      description: Explain the pattern in plain language.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Honest trade offs
+      description: What are the real strengths and the real costs? Please include at least two of each.
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links to books, papers, talks, or engineering posts that describe the pattern.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Contribution
+      options:
+        - label: I am willing to write the page myself.

@@ -1,0 +1,48 @@
+name: Bug or correction
+description: Report a factual error, a broken link, a broken diagram, or a misleading statement.
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping keep these docs accurate. Please be specific so we can fix the problem quickly.
+
+  - type: input
+    id: page
+    attributes:
+      label: Page or file
+      description: Which page has the problem? A path or link is ideal.
+      placeholder: docs/03-microservices.md
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - Factual error
+        - Misleading or one sided statement
+        - Broken link
+        - Diagram does not render or is wrong
+        - Typo or wording
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Quote or describe the text and explain the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix
+      description: If you have a correction, include it here, ideally with a source.
+    validations:
+      required: false

@@ -1,0 +1,33 @@
+flowchart TB
+    Start["Start: describe your situation"] --> Q1{"Do many teams need to release independently?"}
+
+    Q1 -->|"No"| Q2{"Do specific parts need independent scaling or isolation?"}
+    Q1 -->|"Yes"| Q3{"Do you have strong automation, monitoring, and on call?"}
+
+    Q2 -->|"No"| R1["Monolith, ideally organized as a Modular Monolith"]
+    Q2 -->|"A few parts"| R2["Modular Monolith, extract only those parts as services"]
+    Q3 -->|"Yes"| R3["Microservices around clear business boundaries"]
+    Q3 -->|"Not yet"| R4["Modular Monolith, build platform skills first"]
+
+    R1 --> Q4{"Is the business logic complex and long lived?"}
+    R2 --> Q4
+    R3 --> Q4
+    R4 --> Q4
+
+    Q4 -->|"Yes"| R5["Hexagonal or Clean / Onion structure"]
+    Q4 -->|"No"| R6["Simple Layered structure"]
+
+    R5 --> Q5{"Do many parts need to react to the same facts asynchronously?"}
+    R6 --> Q5
+
+    Q5 -->|"Yes"| R7["Add Event Driven communication"]
+    Q5 -->|"No"| R8["Keep direct calls"]
+
+    R7 --> Q6{"Do you need full change history, and do reads and writes differ greatly?"}
+    R8 --> Q6
+
+    Q6 -->|"Yes"| R9["Consider CQRS, add Event Sourcing only if you need the history"]
+    Q6 -->|"No"| R10["Keep a simple model for reads and writes"]
+
+    R9 --> Special["Then check the special cases: Serverless, Space Based, SOA"]
+    R10 --> Special
